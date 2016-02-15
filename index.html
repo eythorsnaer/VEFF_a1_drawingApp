@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Untitled</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/colpick.css">
+		<link rel="shortcut icon" href="http://i.imgur.com/TjvVgXA.jpg?1">
+	</head>
+	<body>
+		<div id="mySidbar">
+			<!-- color picker-->
+			<div id="picker"></div>
+			<div class="toolbox">
+				<label>Drawing tool:
+					<select id="drawingTool">
+						<option value="pencil">Pencil</option>
+						<option value="line">Line</option>
+						<option value="rect">Rectangle</option>
+						<option value="circle">Circle</option>
+						<option value="text">Text</option>
+						<option value="move">Move</option>
+					</select>
+				</label>
+			</div>
+			<div class="toolbox">
+				<label>Drawing style:
+					<select id="toolStyle">
+						<option value="fill">Fill</option>
+						<option value="stroke">Stroke</option>
+					</select>
+				</label>
+			</div>
+			<div class="toolbox">
+				<label>Size: 
+					<input id="mySlider" type="range" name="slider" min="1" max="50" value="4">
+				</label>
+			</div>
+
+			<div class="toolbox">
+				<label>Font:
+					<select id="fontSel">
+						<option value="arial" style="font-family:Arial">Arial</option>
+						<option value="times new roman" style="font-family:Times New Roman">Times New Roman</option>
+						<option value="impact" style="font-family:Impact">Impact</option>
+						<option value="comic sans ms" style="font-family:comic sans ms">Comic Sans MS</option>
+						<option value="courier new" style="font-family:courier new">Courier New</option>
+					</select>
+				</label>
+			</div>
+
+			
+
+			<div class="toolbox", id="clearCanvasDiv">
+				<button id="clearCanvasButton">
+					Clear Canvas
+				</button>
+			</div>
+			<div class="toolbox">
+				<button id="undoB">
+					Undo!
+				</button>
+				<button id="redoB">
+					Redo!
+				</button>
+			</div>
+		</div>
+
+		<div id="container">
+			<canvas id="myCanvas" width="1200" height="800">
+				No Canvas for you!!!!
+			    - The HTML Nazi
+			</canvas>
+			<canvas id="canvasTemp" width="1200" height="800"></canvas>
+			<!-- this is for the text tool-->
+			<input type="text" id="myTextbox">
+		</div>
+	</body>
+
+	<script src="	
+	https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+	<script src="main.js"></script>
+	<script src="js/tools.js"></script>
+	<script src="js/colpick.js"></script>
+	<!--<script src="dist/js/jquery.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>-->
+
+</html>
